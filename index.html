@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Spurthy Skandan</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="#" class="link"
+          >Spurthy</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#publications">Publications</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Spurthy Skandan</span></h1>
+        <h2 class="about__role">Computer Science Grad Student @ USC</h2>
+        <p class="about__desc">
+          I graduated in 2023 with a degree in Computer Science and Engineering from PES University, Bangalore. 
+          Currently, I am a graduate student at Viterbi School of Engineering, University of Southern California, where I continue to explore and contribute to the dynamic field of technology. 
+          Always been fascinated with technology, I am ever curious of human interactions with machines. This has led me to a path of interest in Natural Language Processing. 
+          I also enjoy working on inter-disciplinary problems with data, broadly in the fields of Machine Learning, Information Retrieval and working with graphs in Graph Theory and Network Analysis.
+        </p>
+
+        <div class="about__contact center">
+          <a href="https://drive.google.com/file/d/14wU4lEv2Hr9RIXoIjdWBfWT3SFb2FGtr/view?usp=sharing">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/shreyasdvrj"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/shreyasdvrj"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Patent Claims Generation</h3>
+            <p class="project__description">
+              Automated patent claims generation to reduce reliance on manual drafting on USPTO dataset of 10,000 patents. 
+              Implemented GPT 3.5 and T5 and explored extended capabilities of Long T5 to accommodate longer input (~6,144 tokens)
+              Performance evaluated with BLEU – T5: 3.73; Long T5: 7.52 and Rouge – T5: 36; Long T5: 41.5
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">PyTorch</li>
+            </ul>
+
+            <a
+              href="https://github.com/sumukhbhat2701/EVA.git"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <!-- <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>Question Answering System using Knowledge Graphs</h3>
+            <p class="project__description">
+              Incorporated the use of knowledge graphs into a natural language processing model enhancing its capabilities with part of speech 
+              tagging to answer single-hop and multi-hop questions within a knowledge base by using techniques like entity pair extraction.
+              Had a remarkable accuracy of 80.13% in multi hop questions while BERT performed at 43% on SQuAD and multi-RC datasets.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Pandas</li>
+              <li class="project__stack-item">SpaCy</li>
+              <li class="project__stack-item">NetworkX</li>
+              <li class="project__stack-item">Flask</li>
+            </ul>
+
+            <a
+              href="https://github.com/shreyasdvrj/question-answering-knowledge-graph.git"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <!-- <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>Database Management with GeoSQL Spatial Visualization</h3>
+            <p class="project__description">
+              Developed a Flask web project to provide comprehensive views of cricket teams and enable CRUD operations on IPL database.
+              Generated KML files from spatial coordinates and labels, facilitating visualizations in Google Earth.
+              Executed spatial queries with computing convex hulls, identifying nearest neighbors for spatial analysis in a geospatial context.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">PostgreSQL</li>
+              <li class="project__stack-item">POSTGIS</li>
+              <li class="project__stack-item">Flask</li>
+            </ul>
+
+            <!-- <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+          <div class="project">
+            <h3>StoryHouse - Ecommerce Store</h3>
+            <p class="project__description">
+              An e-commerce store for books allowing third-party transactions. 
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">MERN Stack</li>
+              <li class="project__stack-item">Stencil Js</li>
+            </ul>
+
+            <a
+              href="https://github.com/shreyasdvrj/internship-ecommerce.git"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <!-- <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="publications" class="section publications">
+        <h2 class="section__title">Publications</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Question Answering System using Knowledge Graphs</h3>
+            <p class="project__description" style="justify-content: space-evenly;">
+              S. Skandan, S. Kanungo, S. Devaraj, S. Gupta and S. Narayan, "Question Answering System using Knowledge Graphs," 
+              2023 International Conference on Inventive Computation Technologies (ICICT), Lalitpur, Nepal, 2023, 
+              pp. 656-661, doi: 10.1109/ICICT57646.2023.10134047.
+            </p>
+            <br />
+            <a
+              href="https://ieeexplore.ieee.org/document/10134047"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-file"></i>
+            </a>
+          </div>
+        </div>
+        </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">C/C++</li>
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">MERN</li>
+          <li class="skills__list-item btn btn--plain">MySQL</li>
+          <li class="skills__list-item btn btn--plain">PostgreSQL</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">Postman</li>
+          <li class="skills__list-item btn btn--plain">VSCode</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:shreyas.dev22@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+      href="https://github.com/shreyasdvrj"
+      aria-label="github"
+      class="link link--icon"
+    >
+      <i aria-hidden="true" class="fab fa-github"></i>
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/shreyasdvrj"
+      aria-label="linkedin"
+      class="link link--icon"
+    >
+      <i aria-hidden="true" class="fab fa-linkedin"></i>
+    </a>
+
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
