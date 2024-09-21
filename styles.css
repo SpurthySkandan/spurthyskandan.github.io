@@ -309,7 +309,7 @@ main {
 .project__stack {
   display: flex;
   flex-wrap: wrap;
-  justify-content: justify;
+  justify-content: center;
   margin: 1.2em 0;
 }
 
@@ -335,7 +335,7 @@ main {
 .workex {
   padding: 2em;
   margin: 0 auto;
-  text-align: justify;
+  text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
 }
