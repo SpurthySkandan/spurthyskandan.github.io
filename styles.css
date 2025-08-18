@@ -217,8 +217,8 @@ button {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 8em;
-  width: 95%;
+  height: 5em;
+  width: 100%;
   display: flex;           /* needed for justify-content */
   justify-content: space-between;
   align-items: center;
