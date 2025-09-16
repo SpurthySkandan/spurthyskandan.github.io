@@ -7,8 +7,15 @@ const WorkExperience = () => {
 
       <div className="workex__grid">
         <div className="workex">
-          <h3>Center for Societal Aspiration</h3>
-          <p>Los Angeles, CA</p><br/>
+          <div className="workex__header">
+            <div className="workex__logo">
+              <i className="fas fa-handshake workex__logo-icon"></i>
+            </div>
+            <div className="workex__info">
+              <h3>Center for Societal Aspiration</h3>
+              <p>Los Angeles, CA</p>
+            </div>
+          </div>
           <h5>Project Manager</h5>
           <p>August 2024 - December 2024</p>
           <p className="workex__description">
@@ -25,8 +32,15 @@ const WorkExperience = () => {
         </div>
 
         <div className="workex">
-          <h3>Information Technology Services, USC</h3>
-          <p>Los Angeles, CA</p><br/>
+          <div className="workex__header">
+            <div className="workex__logo">
+              <i className="fas fa-university workex__logo-icon"></i>
+            </div>
+            <div className="workex__info">
+              <h3>Information Technology Services, USC</h3>
+              <p>Los Angeles, CA</p>
+            </div>
+          </div>
           <h5>Junior IAM Analyst</h5>
           <p>April 2024 - May 2025</p>
           <p className="workex__description">
@@ -39,8 +53,15 @@ const WorkExperience = () => {
         </div>
 
         <div className="workex">
-          <h3>EOX Vantage</h3>
-          <p>Bangalore, India</p><br/>
+          <div className="workex__header">
+            <div className="workex__logo">
+              <i className="fas fa-chart-line workex__logo-icon"></i>
+            </div>
+            <div className="workex__info">
+              <h3>EOX Vantage</h3>
+              <p>Bangalore, India</p>
+            </div>
+          </div>
           <h5>Product Management Associate</h5>
           <p>January 2023 - June 2023</p>
           <p className="workex__description">
@@ -52,8 +73,15 @@ const WorkExperience = () => {
         </div>
 
         <div className="workex">
-          <h3>DELL Technologies</h3>
-          <p>Bangalore, India</p><br/>
+          <div className="workex__header">
+            <div className="workex__logo">
+              <i className="fas fa-laptop workex__logo-icon"></i>
+            </div>
+            <div className="workex__info">
+              <h3>DELL Technologies</h3>
+              <p>Bangalore, India</p>
+            </div>
+          </div>
           <h5>Cyber Security Analyst</h5>
           <p>June 2022 - August 2022</p>
           <p className="workex__description">
@@ -66,8 +94,15 @@ const WorkExperience = () => {
         </div>
 
         <div className="workex">
-          <h3>Tesser Insights</h3>
-          <p>Bangalore, India</p><br/>
+          <div className="workex__header">
+            <div className="workex__logo">
+              <i className="fas fa-brain workex__logo-icon"></i>
+            </div>
+            <div className="workex__info">
+              <h3>Tesser Insights</h3>
+              <p>Bangalore, India</p>
+            </div>
+          </div>
           <h5>Data Science Research Intern</h5>
           <p>September 2021 - December 2021</p>
           <p className="workex__description">
