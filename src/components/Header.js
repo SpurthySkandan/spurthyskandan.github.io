@@ -4,7 +4,9 @@ const Header = ({ theme, toggleTheme, isNavOpen, toggleNav }) => {
   return (
     <header className="header center">
       <h3>
-        <a href="/" className="link">Spurthy Skandan</a>
+        <a href="/" className="link header__name">
+          Spurthy Skandan
+        </a>
       </h3>
 
       <nav className="nav center">

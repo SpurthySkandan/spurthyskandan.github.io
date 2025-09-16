@@ -6,7 +6,6 @@ const About = () => {
       <div className="about__container">
         <div className="about__content">
           <div className="about__text">
-            <h1 className="about__name">Spurthy Skandan</h1>
             <h2 className="about__title">Computer Science Professional</h2>
             <p className="about__desc">
               Versatile and results-driven Computer Science professional with a Master's degree from USC. 
@@ -35,6 +34,25 @@ const About = () => {
           </div>
           
           <div className="about__actions">
+            <div className="about__avatar">
+              <div className="about__avatar-figure">
+                <div className="avatar__face">
+                  <div className="avatar__eyes">
+                    <div className="avatar__eye"></div>
+                    <div className="avatar__eye"></div>
+                  </div>
+                  <div className="avatar__smile"></div>
+                </div>
+                <div className="avatar__body"></div>
+              </div>
+              <div className="avatar__dialogue">
+                <div className="dialogue__bubble">
+                  <p className="dialogue__text">Hi, I am Spurthy</p>
+                </div>
+                <div className="dialogue__tail"></div>
+              </div>
+            </div>
+            
             <a href="https://drive.google.com/file/d/1uqL1KXgDAqZttjAWzYjKkPOryByQNf2G/view?usp=sharing" className="about__resume-btn">
               <i className="fas fa-file-alt"></i>
               Resume

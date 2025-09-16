@@ -4,9 +4,9 @@ const Education = () => {
   return (
     <section id="education" className="section education">
       <h2 className="section__title">Education</h2>
-      <div className="education__grid">
+      <div className="education__container">
         {/* Master's */}
-        <div className="education">
+        <div className="education__entry">
           <div className="education__header">
             <div className="education__logo">
               <i className="fas fa-university education__logo-icon"></i>
@@ -20,12 +20,15 @@ const Education = () => {
           <p className="education_courses">
             Software Engineering, Information Retrieval, Analysis of Algorithms, Database Systems, Deep Learning, Natural Language Processing, Cryptography
           </p>
+          <div className="education__spacing"></div>
           <p className="education__location">Los Angeles, CA, USA</p>
           <p className="education__date">Aug 2023 – May 2025</p>
         </div>
 
+        <hr className="education__entry-divider" />
+
         {/* Bachelor's */}
-        <div className="education">
+        <div className="education__entry">
           <div className="education__header">
             <div className="education__logo">
               <i className="fas fa-university education__logo-icon"></i>
@@ -39,6 +42,10 @@ const Education = () => {
           <p className="education_courses">
             Data Structures, AI/ML, Graph Theory, Cloud Computing, Compiler Design, Formal Level Languages, Computer Networks, Data Mining
           </p>
+          <p className="education__scholarship">
+            <strong>Recipient of M.R. Doreswamy Scholarship</strong>
+          </p>
+          <div className="education__spacing"></div>
           <p className="education__location">Bangalore, India</p>
           <p className="education__date">Aug 2019 – May 2023</p>
         </div>

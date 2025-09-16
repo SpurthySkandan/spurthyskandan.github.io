@@ -11,11 +11,11 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
+    const savedTheme = 'dark' || localStorage.getItem('portfolio-theme');
     setTheme(savedTheme);
     document.body.className = savedTheme;
   }, []);

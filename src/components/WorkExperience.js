@@ -55,7 +55,7 @@ const WorkExperience = () => {
         <div className="workex">
           <div className="workex__header">
             <div className="workex__logo">
-              <i className="fas fa-chart-line workex__logo-icon"></i>
+              <i className="fas fa-cogs workex__logo-icon"></i>
             </div>
             <div className="workex__info">
               <h3>EOX Vantage</h3>
@@ -96,14 +96,14 @@ const WorkExperience = () => {
         <div className="workex">
           <div className="workex__header">
             <div className="workex__logo">
-              <i className="fas fa-brain workex__logo-icon"></i>
+              <i className="fas fa-chart-line workex__logo-icon"></i>
             </div>
             <div className="workex__info">
               <h3>Tesser Insights</h3>
               <p>Bangalore, India</p>
             </div>
           </div>
-          <h5>Data Science Research Intern</h5>
+          <h5>Data Science Researcher</h5>
           <p>September 2021 - December 2021</p>
           <p className="workex__description">
             ● Conducted comprehensive research on data cleansing techniques, including phone number validation, regex-based parsing, address normalization, and zip code standardization.
